@@ -1,0 +1,6 @@
+\contentsline {section}{\numberline {1}Introduction}{2}{}%
+\contentsline {section}{\numberline {2}What is an Argument}{2}{}%
+\contentsline {section}{\numberline {3}Introduction to Propositional Logic}{2}{}%
+\contentsline {subsection}{\numberline {3.1}Propositions}{3}{}%
+\contentsline {subsection}{\numberline {3.2}Basic Logical Connectives}{3}{}%
+\contentsline {subsection}{\numberline {3.3}Truth Tables}{3}{}%

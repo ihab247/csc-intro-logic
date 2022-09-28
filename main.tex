@@ -1,0 +1,101 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\author{Ihab}
+\title{CSC Introduction To Logic Lecture Notes}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\section{Introduction}
+We tend to use the word logic when we refer to points that make no sense.  We would say "your logic is flawed" or "IB logic" but this only gives the word a vague definition.  The most encompassing definition is a system used to reason and reach conclusions.  Formal logic abstracts this even further, replacing common languages such as English or German with a Formal language with no wiggle room on its interpretation, like math.
+
+It's important to study logic because of its constant misuse.  Without grasping the simplest rules of argumentation one could be easily manipulated into believing someone which doesn't have solid roots in reasoning.  Take a look at the following example.
+
+Some Students are stressed.
+Some Students have good grades.
+Therefore, Some Students are stressed and have good grades.
+
+Does this reasoning convince you?  If it does, then you would be unhappy to learn that it is not a valid proof.
+
+\section{What is an Argument}
+An argument is defined as a group or set of true premises which, if true, imply a conclusion.  You have this understanding from doing math problems in quadratics, namely the discriminant.  We know that if $\bigtriangleup > 0$ then there are two real unique roots.  If $\bigtriangleup < 0$ then there are no real roots.  If $\bigtriangleup = 0$ then there are two identical real roots.  If we were trying to prove that there were no real roots in a given quadratic equation, we might say "Since $\bigtriangleup < 0$ and if $\bigtriangleup < 0$ there are no real roots, then there are no real roots."  You probably would not write the "and if $\bigtriangleup < 0$" part since that's a commonly known fact, but when making a formal proof you must include all details like these.
+
+\section{Introduction to Propositional Logic}
+
+The most basic Formal Logic to learn is Propositional Logic.  It goes by other names like Zeroth Order Logic or Term Functional Logic, but its appearance is recognisable so that's not to worry about.
+
+\subsection{Propositions}
+Take a look at the argument.
+
+The sky is not blue or the sky is green.
+The sky is blue.
+Therefore, the sky is green.
+
+If we want to know if the argument's logic is done correctly, then we would not care for the extra fluff included.  We could represent the statements as letters to do this.  How about we let $B$ represent "The sky is blue" and $G$ represent "The sky is green."  Then we could focus less on the English of the argument and more on the logic.  It would become: not $B$ or $G$. $B$.  Therefore $G$.  But it still looks quite off.  Indeed, there are some bits that are still in English, words like "not" and "or."  If only there was a way to represent these in logic.
+
+Propositions are best defined as statements which are either true or false, no in between.  Phrases like "Hi what's poppin" do not have a truth value since they are asking you what's poppin, not declaring anything.
+
+\subsection{Basic Logical Connectives}
+We could combine propositions with others using connectives.  They are like operations in mathematics but they are applied to propositions instead of variables or numbers.  They are applied to one or more propositions to derive a new truth value.
+
+\begin{center}
+\begin{tabular}{c c c c} 
+ \hline
+ Logical Connective & English Meaning \\ [0.5ex] 
+ \hline\hline
+ $\land$ & and, but \\ 
+ $\lor$ & or, either \\
+ $\neg$ & not, it's not the case that \\  
+\end{tabular}
+\end{center}
+
+So that previous argument could be fully written down in Proposition Logic:  $\neg B \lor G$. $B$.  Therefore $G$
+
+\subsection{Truth Tables}
+Remember that logical connectives are applied to one or more propositions to derive a new truth value.  It's useful and perhaps best to learn how they do this by listing all possible combinations of the propositions possible truth values.
+
+\begin{displaymath}
+\begin{array}{c c|c}
+P & Q & P \land Q\\ 
+\hline 
+T & T & T\\
+T & F & F\\
+F & T & F\\
+F & F & F\\
+\end{array}
+\end{displaymath}
+
+\begin{displaymath}
+\begin{array}{c c|c}
+P & Q & P \lor Q\\ 
+\hline 
+T & T & T\\
+T & F & T\\
+F & T & T\\
+F & F & F\\
+\end{array}
+\end{displaymath}
+
+\begin{displaymath}
+\begin{array}{c| c}
+P & \neg P \\ 
+\hline 
+T & F \\
+F & T \\
+\end{array}
+\end{displaymath}
+
+Why learn these?  They are useful for confirming with certainty that a proof is done correctly.
+
+%\subsection{Verification with Truth Tables}
+
+%\section{Introduction to the Fitch Natural Deduction System}
+%\subsection{Rules of Inference}
+%\subsection{Introduction to Introductions}
+%\subsection{Introduction to Eliminations}
+%\subsection{Miscellaneous Rules of Inference}
+
+\end{document}
